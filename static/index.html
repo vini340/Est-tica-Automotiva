@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diamond Style Car | Estética Automotiva Premium</title>
+<meta name="description" content="Diamond Style Car — Estética automotiva e cuidado em cada detalhe. Seu carro em outro nível com proteção, espelhamento e acabamento impecável.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 29 13 16 29 3 13Z' fill='%231677FF'/%3E%3Cpath d='M3 13h26M10 13l6-10M22 13l-6-10M10 13l6 16M22 13l-6 16' stroke='%23050505' stroke-width='1.4' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  document.documentElement.classList.add("js");
+  (function() {
+    try {
+      var saved = localStorage.getItem('diamond_theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch(e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/booking.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoWash","name":"Diamond Style Car","description":"Estética automotiva premium: cuidado, proteção e sofisticação para o seu veículo."}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- SVG Sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-diamond" viewBox="0 0 24 24"><path d="M6 3h12l4 7-10 14L2 10z"/><path d="M2 10h20M7.5 3 12 24.5M16.5 3 12 24.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol>
+</svg>
+
+<!-- ==========================================================================
+     CABEÇALHO — 100% TRANSPARENTE, SEM BARRA, SEM CÁPSULA (Estilo MARÉ)
+     ========================================================================== -->
+<header class="site-header">
+  <a class="header-brand" href="#topo">
+    <svg class="header-brand__icon" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3 29 13 16 29 3 13Z" fill="currentColor"/>
+      <path d="M3 13h26M10 13l6-10M22 13l-6-10M10 13l6 16M22 13l-6 16" stroke="#050505" stroke-width="1.4" fill="none"/>
+    </svg>
+    <span class="header-brand__text">Diamond Style Car</span>
+  </a>
+
+  <!-- Links Soltos no Centro -->
+  <nav class="header-nav" id="menu">
+    <a href="#topo">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#atendimento">Atendimento</a>
+  </nav>
+
+  <!-- Botão Enquire / Agendar no Extremo Direito + Botão Alternar Tema -->
+  <div class="header-cta">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" title="Alternar Modo Claro/Escuro">
+      <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a class="btn btn--outline-fine" href="#agendar">Agendar</a>
+    <button class="header-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg class="ico"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ==========================================================================
+     HERO FULLSCREEN — FULL-BLEED (Inspirada no MARÉ)
+     Zero molduras, 100vw, supercarro protagonista nítido, tipografia monumental
+     ========================================================================== -->
+<section class="hero-fullscreen" id="topo">
+  <!-- Imagem do Supercarro em Tela Cheia -->
+  <div class="hero-fullscreen__media" aria-hidden="true">
+    <img id="hero-img" src="" alt="Supercarro Diamond Style Car" loading="eager">
+  </div>
+
+  <!-- Espaçador Superior para o Cabeçalho Transparente -->
+  <div class="hero-fullscreen__spacer" aria-hidden="true"></div>
+
+  <!-- Bloco Principal de Texto (Inspirado no MARÉ) -->
+  <div class="hero-fullscreen__content">
+    <span class="hero-eyebrow">ESTÉTICA AUTOMOTIVA · SÃO PAULO</span>
+    <h1 class="hero-title">
+      Seu carro,<br>
+      <em>em outro nível.</em>
+    </h1>
+  </div>
+
+  <!-- Rodapé da Primeira Dobra (Inspirado no MARÉ) -->
+  <div class="hero-fullscreen__bottom">
+    <p class="hero-subtext">
+      Estética automotiva e cuidado em cada detalhe.
+    </p>
+
+    <div class="hero-actions">
+      <a class="link-editorial" href="#agendar">
+        Agendar atendimento →
+      </a>
+      <a class="btn btn--outline-fine hero-wa-btn" href="#" data-wa="hero" hidden target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-chat"/></svg> Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     CONTEÚDO PRINCIPAL
+     ========================================================================== -->
+<main id="conteudo">
+
+  <!-- ===== 1. SEÇÃO DE SERVIÇOS ===== -->
+  <section class="sec-services" id="servicos" aria-labelledby="t-serv">
+    <div class="container">
+      <div class="services-head">
+        <p class="sec-kicker">CUIDADO & PRECISÃO</p>
+        <h2 class="sec-title" id="t-serv">O brilho está nos detalhes.</h2>
+        <p class="sec-desc">
+          Procedimentos executados com técnicas avançadas de detalhamento e produtos de alta tecnologia para proteger e valorizar seu veículo.
+        </p>
+        <p class="services-head__nota">
+          Os serviços marcados como <strong>“Consulte disponibilidade e orçamento”</strong> são sugestões de ampliação do catálogo, ainda a confirmar pelo proprietário antes da publicação definitiva. Os preços já cadastrados não foram alterados.
+        </p>
+        <a class="btn btn--outline-fine services-head__wa" href="#" data-wa="servicos" hidden target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-chat"/></svg> Tirar dúvidas no WhatsApp
+        </a>
+      </div>
+
+      <!-- Catálogo Editorial de Serviços (Zero Cartões) -->
+      <div class="services-catalog" id="lista-servicos">
+        <p style="color:var(--text-dim); padding:20px;">Carregando serviços...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. SEÇÃO DE DIFERENCIAIS ===== -->
+  <section class="sec-diferenciais" id="diferenciais" aria-labelledby="t-dif">
+    <div class="diferenciais__backdrop" aria-hidden="true">
+      <img id="dif-bg" src="" alt="" loading="lazy">
+    </div>
+
+    <div class="container diferenciais__container">
+      <div class="diferenciais__head">
+        <p class="sec-kicker">PADRÃO DIAMOND</p>
+        <h2 class="sec-title" id="t-dif">Cuidado que vai além do visual.</h2>
+        <p class="sec-desc">
+          A estética automotiva de alto padrão exige rigor, ciência de materiais e atenção obsessiva a cada centímetro.
+        </p>
+      </div>
+
+      <div class="diferenciais__grid">
+        <div class="dif-item">
+          <span class="dif-item__number">01</span>
+          <h3 class="dif-item__title">Precisão Milimétrica</h3>
+          <p class="dif-item__text">
+            Inspeção minuciosa de cada vinco e detalhe da carroceria sob iluminação técnica de estúdio.
+          </p>
+        </div>
+
+        <div class="dif-item">
+          <span class="dif-item__number">02</span>
+          <h3 class="dif-item__title">Química de Performance</h3>
+          <p class="dif-item__text">
+            Produtos importados de altíssimo rendimento com pH neutro que preservam verniz, borrachas e couros.
+          </p>
+        </div>
+
+        <div class="dif-item">
+          <span class="dif-item__number">03</span>
+          <h3 class="dif-item__title">Técnicas Avançadas</h3>
+          <p class="dif-item__text">
+            Remoção de micro-riscos e contaminantes sem agressão à pintura original do veículo.
+          </p>
+        </div>
+
+        <div class="dif-item">
+          <span class="dif-item__number">04</span>
+          <h3 class="dif-item__title">Dedicação Individual</h3>
+          <p class="dif-item__text">
+            Trabalhamos com vagas rigorosamente limitadas para garantir exclusividade e perfeição em cada entrega.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. SEÇÃO GALERIA EDITORIAL ===== -->
+  <section class="sec-galeria" id="galeria" aria-labelledby="t-gal">
+    <div class="container">
+      <div class="galeria__head">
+        <p class="sec-kicker">PORTFÓLIO VISUAL</p>
+        <h2 class="sec-title" id="t-gal">Nosso padrão de excelência.</h2>
+        <p class="sec-desc">
+          Fotografias que revelam a profundidade de reflexo, acabamento e cuidado em cada veículo atendido.
+        </p>
+      </div>
+
+      <div class="galeria-grid" id="galeria-grid">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. SEÇÃO DE AGENDAMENTO (Preservado e Integrado) ===== -->
+  <section class="sec-book" id="agendar" aria-labelledby="t-agendar">
+    <div class="container">
+      <div class="book__head">
+        <p class="sec-kicker">RESERVA DE HORÁRIO</p>
+        <h2 class="sec-title" id="t-agendar">Agende seu atendimento</h2>
+        <p class="sec-desc">
+          Atendemos <span data-dias>sábado e domingo</span>. Monte seu pedido e confirme os detalhes diretamente pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="book__grid">
+        <div class="wiz" id="wiz">
+          <ol class="steps" id="steps" aria-label="Etapas do pedido">
+            <li data-s="0">Serviço</li>
+            <li data-s="1">Data e horário</li>
+            <li data-s="2">Seus dados</li>
+            <li data-s="3">Preferência</li>
+          </ol>
+          <div class="steps__bar" aria-hidden="true"><i id="steps-bar"></i></div>
+
+          <form id="form" novalidate>
+            <!-- Etapa 0 -->
+            <section class="pane" data-pane="0" aria-labelledby="p0">
+              <h3 id="p0" tabindex="-1">Qual serviço você deseja agendar?</h3>
+              <div class="opts" id="opts-servico" role="radiogroup" aria-labelledby="p0"></div>
+            </section>
+
+            <!-- Etapa 1 -->
+            <section class="pane" data-pane="1" aria-labelledby="p1" hidden>
+              <h3 id="p1" tabindex="-1">Qual dia e horário você prefere?</h3>
+              <div class="dias" id="dias" role="radiogroup" aria-label="Dia de atendimento"></div>
+              <button type="button" class="link" id="mais-dias">Ver mais datas</button>
+
+              <div class="field field--hora">
+                <label for="hora">Horário desejado</label>
+                <input id="hora" name="hora" type="time" aria-describedby="hint-hora err-hora">
+                <p class="field__hint" id="hint-hora" hidden></p>
+                <p class="field__err" id="err-hora" hidden></p>
+              </div>
+              <p class="hint">O horário é confirmado pela equipe da estética diretamente na conversa do WhatsApp.</p>
+            </section>
+
+            <!-- Etapa 2 -->
+            <section class="pane" data-pane="2" aria-labelledby="p2" hidden>
+              <h3 id="p2" tabindex="-1">Informe seus dados</h3>
+              <div class="field">
+                <label for="nome">Seu Nome</label>
+                <input id="nome" name="nome" autocomplete="name" maxlength="60" placeholder="Ex: Roberto Carlos" aria-describedby="err-nome">
+                <p class="field__err" id="err-nome" hidden></p>
+              </div>
+              <div class="field">
+                <label for="carro">Modelo do Carro</label>
+                <input id="carro" name="carro" autocomplete="off" maxlength="60" placeholder="Ex: Porsche 911 / BMW 320i" aria-describedby="err-carro">
+                <p class="field__err" id="err-carro" hidden></p>
+              </div>
+              <p class="hint">Estes dados servem unicamente para redigir a mensagem do seu pedido no WhatsApp.</p>
+            </section>
+
+            <!-- Etapa 3 -->
+            <section class="pane" data-pane="3" aria-labelledby="p3" hidden>
+              <h3 id="p3" tabindex="-1">Preferência de acerto</h3>
+              <div class="opts opts--pag" id="opts-pag" role="radiogroup" aria-labelledby="p3"></div>
+              <p class="hint">O site não realiza cobranças. O pagamento é acertado diretamente na entrega do veículo.</p>
+            </section>
+
+            <p class="wiz__err" id="erro-step" role="alert" hidden></p>
+
+            <div class="wiz__nav">
+              <button type="button" class="btn btn--ghost" id="voltar" hidden>Voltar</button>
+              <button type="submit" class="btn btn--primary" id="avancar">Escolher data e horário</button>
+            </div>
+          </form>
+
+          <!-- Confirmação e Envio WhatsApp -->
+          <div class="done" id="done" hidden>
+            <h3 id="done-t" tabindex="-1">Pedido Pronto para Envio</h3>
+            <p class="done__lead">Para confirmar sua vaga, basta enviar a mensagem na conversa do WhatsApp da <strong>Diamond Style Car</strong>.</p>
+            <ol class="done__steps">
+              <li>Confira a mensagem na conversa que abriu.</li>
+              <li>Toque em <strong>Enviar</strong> no WhatsApp.</li>
+              <li>Aguarde nossa confirmação de vaga e horário.</li>
+            </ol>
+            <pre class="msg" id="done-msg" aria-label="Mensagem pronta"></pre>
+            <div class="done__acts">
+              <a class="btn btn--wa" id="done-wa" href="#" target="_blank" rel="noopener">
+                <svg class="ico"><use href="#i-chat"/></svg> Abrir WhatsApp e Enviar
+              </a>
+              <button type="button" class="btn btn--ghost" id="done-copy">
+                <svg class="ico"><use href="#i-copy"/></svg> Copiar mensagem
+              </button>
+            </div>
+            <p class="done__aviso" id="done-aviso" hidden>O número do WhatsApp da estética ainda não foi configurado (js/config.js). Copie a mensagem acima para enviar por outro meio.</p>
+            <div class="done__links">
+              <button type="button" class="link" id="editar">Editar pedido</button>
+              <button type="button" class="link" id="novo">Fazer outro pedido</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumo Lateral (Reserva VIP) -->
+        <aside class="os" id="resumo" aria-label="Resumo da reserva">
+          <h3 class="os__t" id="os-t">Reserva de Atendimento</h3>
+          <dl class="os__l">
+            <div><dt>Serviço</dt><dd id="r-servico"></dd></div>
+            <div><dt>Data</dt><dd id="r-data"></dd></div>
+            <div><dt>Horário</dt><dd id="r-hora"></dd></div>
+            <div><dt>Veículo</dt><dd id="r-carro"></dd></div>
+            <div><dt>Cliente</dt><dd id="r-nome"></dd></div>
+            <div><dt>Preferência</dt><dd id="r-pag"></dd></div>
+          </dl>
+          <div class="os__tot">
+            <span>Investimento</span>
+            <strong id="r-total"></strong>
+          </div>
+          <p class="os__nota">Vaga sob reserva exclusiva. Confirmação instantânea via WhatsApp oficial.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. SEÇÃO DE ATENDIMENTO EXCLUSIVO ===== -->
+  <section class="sec-atendimento" id="atendimento" aria-labelledby="t-local">
+    <span id="local" style="display:none;" aria-hidden="true"></span>
+    <div class="container atendimento-grid">
+      <!-- Lado Esquerdo: Identificação, Título Monumental, Descrição e Botão -->
+      <div class="atend-left">
+        <p class="sec-kicker">ATENDIMENTO PERSONALIZADO</p>
+        <h2 class="sec-title" id="t-local">Seu momento.<br>Seu atendimento.</h2>
+        <p class="sec-desc">
+          Dedicamos tempo exclusivo e atenção meticulosa a cada detalhe do seu veículo. Sem filas, sem pressa — um processo artesanal e individualizado para garantir acabamento cirúrgico e proteção duradoura.
+        </p>
+        <div class="atend-left__actions">
+          <a class="btn btn--primary" href="#agendar">
+            Reservar atendimento →
+          </a>
+          <a class="btn btn--outline-fine atend-wa-btn" href="#" data-wa="atendimento" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-chat"/></svg> Conversar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Lado Direito: Composição Visual com Dias e Horários em Destaque -->
+      <div class="atend-right">
+        <!-- Card 1: Destaque de Fins de Semana -->
+        <div class="atend-card atend-card--featured">
+          <div class="atend-card__badge">
+            <span class="atend-pulse"></span>
+            DIAS DE ATENDIMENTO VIP
+          </div>
+
+          <div class="atend-days-grid">
+            <div class="atend-day-box">
+              <div class="atend-day-box__top">
+                <span class="atend-day-box__tag">01</span>
+                <span class="atend-day-box__badge">Dedicado</span>
+              </div>
+              <h3 class="atend-day-box__name">Sábado</h3>
+              <p class="atend-day-box__desc">Tratamentos completos, correção de pintura e detalhamento minucioso.</p>
+              <div class="atend-day-box__status">
+                <span class="atend-dot"></span> Vagas exclusivas
+              </div>
+            </div>
+
+            <div class="atend-day-box">
+              <div class="atend-day-box__top">
+                <span class="atend-day-box__tag">02</span>
+                <span class="atend-day-box__badge">Sob Reserva</span>
+              </div>
+              <h3 class="atend-day-box__name">Domingo</h3>
+              <p class="atend-day-box__desc">Atendimento sob reserva prévia e entrega com protocolo de inspeção.</p>
+              <div class="atend-day-box__status">
+                <span class="atend-dot"></span> Atendimento reservado
+              </div>
+            </div>
+          </div>
+
+          <div class="atend-card__info">
+            <div class="atend-card__info-icon">
+              <svg class="ico"><use href="#i-clock"/></svg>
+            </div>
+            <div class="atend-card__info-text">
+              <strong>Horário Mediante Agendamento Prévio</strong>
+              <p>Horários flexíveis conforme a sua conveniência e o tempo necessário para cada procedimento.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Padrões e Localização -->
+        <div class="atend-card atend-card--details">
+          <div class="atend-details-row">
+            <div class="atend-detail-item">
+              <span class="atend-detail-label">Padrão de Serviço</span>
+              <strong class="atend-detail-val">1 Veículo por Turno</strong>
+            </div>
+            <div class="atend-detail-item">
+              <span class="atend-detail-label">Confirmação</span>
+              <strong class="atend-detail-val">Instantânea no WhatsApp</strong>
+            </div>
+            <div class="atend-detail-item local__end" hidden>
+              <span class="atend-detail-label">Localização</span>
+              <strong class="atend-detail-val" id="endereco"></strong>
+              <a class="atend-maps-link" id="maps" href="#" target="_blank" rel="noopener" hidden>Ver no Google Maps →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fallback compatível para script que injeta em #horas -->
+        <dl class="horas-box" id="horas" hidden></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. SEÇÃO DE FAQ ===== -->
+  <section class="sec-faq" id="faq" aria-labelledby="t-faq">
+    <div class="container faq-layout">
+      <div>
+        <p class="sec-kicker">DÚVIDAS FREQUENTES</p>
+        <h2 class="sec-title" id="t-faq">Suas dúvidas, respondidas.</h2>
+        <p class="sec-desc">
+          Tudo o que você precisa saber sobre nossos serviços de estética automotiva e procedimentos.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>O horário já fica reservado quando eu envio pelo site?</summary>
+          <p>O formulário gera sua mensagem formatada no WhatsApp. A reserva é confirmada prontamente assim que nossa equipe responder na conversa.</p>
+        </details>
+        <details>
+          <summary>Preciso pagar antecipadamente pelo site?</summary>
+          <p>Não. O site não realiza cobranças. Você apenas indica sua preferência de pagamento (Pix ou no momento da entrega do veículo).</p>
+        </details>
+        <details>
+          <summary>Quais são os dias de atendimento da estética?</summary>
+          <p>Atendemos exclusivamente aos <span data-dias>sábado e domingo</span> para garantir dedicação artesanal a cada carro.</p>
+        </details>
+        <details>
+          <summary>E se eu precisar alterar o horário escolhido?</summary>
+          <p>Basta nos avisar na conversa do WhatsApp que abriu. Ajustaremos prontamente para o melhor horário disponível.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. CTA FINAL CINEMATOGRÁFICO ===== -->
+  <section class="sec-cta-final" id="cta-final">
+    <div class="cta-final__bg" aria-hidden="true">
+      <img id="cta-bg" src="" alt="" loading="lazy">
+    </div>
+
+    <div class="container cta-final__content">
+      <p class="sec-kicker">DIAMOND STYLE CAR</p>
+      <h2 class="cta-final__title">Seu carro merece <em>esse cuidado.</em></h2>
+      <p class="cta-final__desc">
+        Descubra o padrão supremo em estética automotiva. Agende um horário e surpreenda-se com o resultado.
+      </p>
+      <a class="btn btn--primary" href="#agendar">
+        Agendar atendimento →
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer class="footer-wrap">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <strong>Diamond Style Car</strong>
+        <p>Estética automotiva premium. Cuidado, proteção e sofisticação em cada detalhe do seu veículo.</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Navegação</p>
+        <div class="footer-links">
+          <a href="#topo">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#agendar">Agendamento</a>
+          <a href="#faq">Dúvidas</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Contato</p>
+        <div class="footer-links">
+          <p id="foot-whatsapp" hidden></p>
+          <p id="foot-endereco" hidden></p>
+        </div>
+      </div>
+
+      <div class="footer-social" id="foot-instagram" hidden>
+        <p class="footer-col-title">Conecte-se conosco</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="ano"></span> Diamond Style Car. Todos os direitos reservados.</p>
+      <p style="opacity:0.6;">Seus dados são utilizados exclusivamente para montar a mensagem no WhatsApp.</p>
+      <p class="footer-credits">Fotografias ilustrativas de bancos livres (Pexels), não representam trabalhos da Diamond Style Car.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão Flutuante WhatsApp (FAB) & Dock Mobile -->
+<a class="fab" href="#" data-wa hidden target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg class="ico"><use href="#i-chat"/></svg>
+</a>
+
+<div class="dock" id="dock">
+  <a class="btn btn--primary" href="#agendar">Agendar</a>
+  <a class="btn btn--wa" style="width:52px; padding:0;" href="#" data-wa hidden target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="ico"><use href="#i-chat"/></svg>
+  </a>
+</div>
+
+<noscript>
+  <p style="padding:20px; text-align:center; background:#10243B; color:#fff;">
+    Ative o JavaScript no seu navegador para utilizar o agendamento interativo.
+  </p>
+</noscript>
+
+<!-- Scripts -->
+<script src="js/config.js"></script>
+<script src="js/images.js"></script>
+<script src="js/util.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* ==========================================================================
+   DIAMOND STYLE CAR — DESIGN SYSTEM
+   Direção de Arte: Estética Automotiva de Luxo (Referência MARÉ)
+   - Layout Full-Bleed (100% largura de ponta a ponta)
+   - Tipografia Editorial de Alto Padrão
+   - Paleta: Preto Absoluto (#050505), Preto Azulado (#080D16), Azul Elétrico (#1677FF)
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+  /* ---- Paleta de Cores — Modo Escuro (Padrão) ---- */
+  --black-absolute:   #050505;
+  --black-blue:       #080D16;
+  --black-secondary:  #0C111B;
+  --blue-deep:        #10243B;
+  --blue-dark:        #123D70;
+  --blue-electric:    #1677FF;
+  --blue-intense:     #258BFF;
+  --blue-ice:         #8CCFFF;
+  --white:            #FFFFFF;
+  --gray-light:       #A8B0BC;
+  --gray-mid:         #687588;
+  --gray-dark:        #141B28;
+
+  /* ---- Cores de Status ---- */
+  --signal:           #EF8178;
+  --ok:               #328D6E;
+  --wa:               #25D366;
+
+  /* ---- Variáveis Semânticas ---- */
+  --bg-page:          #050505;
+  --bg-section:       #080D16;
+  --bg-card:          #0C111B;
+  --bg-card-subtle:   rgba(16, 36, 59, 0.35);
+  --bg-input:         rgba(16, 36, 59, 0.25);
+  --bg-footer:        #020406;
+  --accent:           #1677FF;
+  --accent-soft:      #10243B;
+  --accent-ice:       #8CCFFF;
+  --text-main:        #FFFFFF;
+  --text-muted:       #A8B0BC;
+  --text-dim:         #687588;
+  --border-subtle:    rgba(255, 255, 255, 0.08);
+  --border-medium:    rgba(255, 255, 255, 0.16);
+  --shadow-card:      0 20px 50px rgba(0, 0, 0, 0.6);
+  --shadow-glow:      0 0 24px rgba(22, 119, 255, 0.25);
+
+  /* ---- Tipografia Editorial de Luxo ---- */
+  --f-serif:          "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --f-heading:        "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --f-body:           "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* ---- Transições ---- */
+  --ease-out:         cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast:           180ms;
+  --t-base:           320ms;
+  --t-slow:           650ms;
+
+  --max-content:      1340px;
+}
+
+/* ==========================================================================
+   MODO CLARO (LIGHT THEME) — REFINADO & LUMINOSO
+   ========================================================================== */
+[data-theme="light"] {
+  --black-absolute:   #F4F7FB;
+  --black-blue:       #FFFFFF;
+  --black-secondary:  #EAF0F7;
+  --blue-deep:        #123D70;
+  --blue-dark:        #0E2A4E;
+  --blue-electric:    #1677FF;
+  --blue-intense:     #0D62DB;
+  --blue-ice:         #1677FF;
+  --white:            #101827;
+  --gray-light:       #536174;
+  --gray-mid:         #7C8BA0;
+  --gray-dark:        #E2E8F0;
+
+  /* ---- Variáveis Semânticas Modo Claro ---- */
+  --bg-page:          #F4F7FB;
+  --bg-section:       #FFFFFF;
+  --bg-card:          #FFFFFF;
+  --bg-card-subtle:   #EAF0F7;
+  --bg-input:         #FFFFFF;
+  --bg-footer:        #EEF3F8;
+  --accent:           #1677FF;
+  --accent-soft:      #DCEEFF;
+  --accent-ice:       #123D70;
+  --text-main:        #101827;
+  --text-muted:       #536174;
+  --text-dim:         #7C8BA0;
+  --border-subtle:    #D9E2ED;
+  --border-medium:    #C5D2E0;
+  --shadow-card:      0 12px 36px rgba(16, 24, 39, 0.06);
+  --shadow-glow:      0 0 20px rgba(22, 119, 255, 0.18);
+}
+
+/* ---- Reset Rigoroso Full-Bleed ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font: 400 16px/1.65 var(--f-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color var(--t-base) var(--ease-out), color var(--t-base) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Scroll margin para links âncora */
+section[id], header[id], div[id] {
+  scroll-margin-top: 40px;
+}
+
+/* Container apenas para seções de texto/conteúdo, NUNCA para a Hero ou o Site todo */
+.container {
+  width: min(var(--max-content), 100% - 48px);
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: min(var(--max-content), 100% - 96px);
+  }
+}
+
+/* Acessibilidade */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.skip {
+  position: absolute;
+  left: 24px;
+  top: -80px;
+  z-index: 999;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 4px;
+  transition: top var(--t-fast) var(--ease-out);
+}
+.skip:focus {
+  top: 24px;
+}
+
+/* Ícones */
+.ico {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* ---- Botões & Links Editoriais ---- */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 0 32px;
+  font: 600 13px/1 var(--f-body);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all var(--t-base) var(--ease-out);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Botão Azul Elétrico Principal */
+.btn--primary {
+  background: var(--blue-electric);
+  color: var(--white);
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(22, 119, 255, 0.35);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn--primary:hover {
+    background: var(--blue-intense);
+    box-shadow: 0 8px 32px rgba(37, 139, 255, 0.55);
+    transform: translateY(-2px);
+  }
+}
+
+/* Botão Outline Fino (Estilo MARÉ "ENQUIRE") */
+.btn--outline-fine {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  padding: 10px 24px;
+  min-height: 40px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn--outline-fine:hover {
+    border-color: var(--blue-ice);
+    color: var(--blue-ice);
+    background: rgba(22, 119, 255, 0.12);
+  }
+}
+
+/* Link Editorial com Seta e Sublinhado Sutil (Estilo MARÉ "DISCOVER THE FLEET →") */
+.link-editorial {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+  font: 600 13px/1 var(--f-heading);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  transition: all var(--t-fast) var(--ease-out);
+}
+
+.link-editorial:hover {
+  color: var(--blue-ice);
+  border-bottom-color: var(--blue-ice);
+  gap: 18px;
+}
+
+/* Botão WhatsApp */
+.btn--wa {
+  background: #25D366;
+  color: #05080E;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn--wa:hover {
+    background: #2ee672;
+    transform: translateY(-2px);
+  }
+}
+
+/* Kickers & Títulos de Seção */
+.sec-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--blue-ice);
+  font: 700 11px/1 var(--f-heading);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.sec-title {
+  font: 800 clamp(36px, 4.5vw, 60px)/1.1 var(--f-heading);
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+}
+
+.sec-desc {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font: 400 clamp(15px, 1.3vw, 18px)/1.65 var(--f-body);
+  max-width: 52ch;
+}
+
+/* Reveal em Scroll */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--t-slow) var(--ease-out), transform var(--t-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
